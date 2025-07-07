@@ -1,0 +1,20 @@
+.service-details-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .service-details-container img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+  }
+  
+  .provider-card {
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .provider-card:hover {
+    transform: scale(1.05);
+  }
+  

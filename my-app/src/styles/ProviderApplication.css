@@ -1,0 +1,76 @@
+/* Outer background container */
+.MuiContainer-root:has(h4:contains("Become a Service Provider")) {
+  background: linear-gradient(to bottom right, #e3f2fd, #f9f9f9);
+  padding: 60px 0;
+  min-height: 100vh;
+}
+
+
+.MuiContainer-root form {
+  background-color: #ffffff;
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.MuiContainer-root h4 {
+  text-align: center;
+  font-weight: 600;
+  color: #1976d2;
+  margin-bottom: 25px;
+  font-size: 1.75rem;
+}
+
+
+.MuiTextField-root {
+  background-color: #f0f4f8;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+}
+
+
+.MuiTextField-root input {
+  padding: 10px 12px;
+  font-size: 0.9rem;
+}
+
+/* File input */
+form input[type="file"] {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+/* Submit button */
+form button[type="submit"] {
+  background: linear-gradient(to right, #1976d2, #2196f3);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 0.95rem;
+  margin-top: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+form button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(33, 150, 243, 0.25);
+}
+
+
+@media (max-width: 640px) {
+  .MuiContainer-root form {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .MuiContainer-root h4 {
+    font-size: 1.5rem;
+  }
+}

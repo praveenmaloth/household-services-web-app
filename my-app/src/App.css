@@ -1,0 +1,79 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+  animation: gradientBG 8s ease infinite;
+  color: #333;
+}
+
+/* Background Animation */
+@keyframes gradientBG {
+  0% { background: linear-gradient(135deg, #fbc2eb, #a6c1ee); }
+  50% { background: linear-gradient(135deg, #a6c1ee, #fbc2eb); }
+  100% { background: linear-gradient(135deg, #fbc2eb, #a6c1ee); }
+}
+
+/* Navbar Styling */
+.MuiAppBar-root {
+  background: linear-gradient(135deg, #ff6f61, #ff9966);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.MuiToolbar-root {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Navbar Buttons */
+.MuiButton-root {
+  font-weight: bold;
+  transition: transform 0.2s ease-in-out, background 0.3s ease-in-out;
+}
+
+.MuiButton-root:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+/* Profile Icon */
+.MuiIconButton-root {
+  transition: transform 0.3s ease-in-out;
+}
+
+.MuiIconButton-root:hover {
+  transform: rotate(360deg);
+}
+
+/* Page Container */
+.MuiContainer-root {
+  padding: 30px;
+}
+
+/*Footer Styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+footer:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+  .MuiToolbar-root {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .MuiButton-root {
+    margin: 5px 0;
+  }
+}

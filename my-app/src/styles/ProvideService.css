@@ -1,0 +1,36 @@
+.provide-service-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .provide-service-container h4 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .MuiTextField-root {
+    margin-bottom: 15px !important;
+  }
+  
+  .MuiButton-root {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .MuiButton-root:hover {
+    background: #0056b3;
+  }
+  

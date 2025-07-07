@@ -1,0 +1,60 @@
+.booking-card {
+    margin-bottom: 20px;
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: black;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .booking-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .booking-info {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .booking-actions {
+    margin-top: 16px;
+  }
+  
+  .booking-button {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+  
+  .booking-button:hover {
+    transform: scale(1.05);
+  }
+  
+  .booking-button:first-child {
+    background-color: #1976d2 !important; 
+    color: white !important;
+  }
+  
+  .booking-button:last-child {
+    background-color: #e53935 !important; 
+    color: white !important;
+    margin-left: 12px;
+  }
+  
+  .booking-status {
+    margin-top: 16px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .booking-status.accepted {
+    color: #2e7d32; 
+  }
+  
+  .booking-status.rejected {
+    color: #c62828; 
+  }
+  

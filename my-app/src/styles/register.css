@@ -1,0 +1,48 @@
+/* Ensure modal and form merge */
+.form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Input Fields */
+.form-group {
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #2d3748;
+}
+
+input {
+    width: 90%;
+    padding: 0.8rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #ffffff;
+}
+
+/* Button */
+.btn {
+    background-color: #ec4899;
+    color: white;
+    padding: 0.85rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #db2777;
+    transform: scale(1.05);
+}

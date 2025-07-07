@@ -1,0 +1,134 @@
+/* ProviderBookings.css */
+
+/* Container Styles */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-align: center;
+  }
+  
+  /* Heading */
+  h4 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 25px;
+    position: relative;
+  }
+  
+  
+  h4::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: #007bff;
+    display: block;
+    margin: 8px auto;
+    border-radius: 5px;
+  }
+  
+  /* Loading Indicator */
+  .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+  
+  /* No Bookings Text */
+  .no-bookings {
+    font-size: 18px;
+    color: #777;
+    margin-top: 20px;
+  }
+  
+  /* Booking Cards Container */
+  .bookings-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Booking Card */
+  .booking-card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border-left: 5px solid #007bff;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .booking-card:hover {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+  }
+  
+  /* Booking Details */
+  .booking-details {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  /* Booking Action Buttons */
+  .booking-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  .accept-btn,
+  .reject-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .accept-btn {
+    background: #28a745;
+    color: white;
+  }
+  
+  .reject-btn {
+    background: #dc3545;
+    color: white;
+  }
+  
+  .accept-btn:hover {
+    background: #218838;
+  }
+  
+  .reject-btn:hover {
+    background: #c82333;
+  }
+  
+
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+      padding: 15px;
+    }
+  
+    .booking-card {
+      padding: 15px;
+    }
+  
+    .accept-btn,
+    .reject-btn {
+      padding: 8px 15px;
+      font-size: 14px;
+    }
+  }
+  
